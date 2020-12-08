@@ -9,6 +9,9 @@ export default function Header({title}){
                 style={styles.headerLogo}
                 source={require("../Images/HeaderLogo.png")}/>
             <Image
+                style={styles.addLogo}
+                source={require("../Images/add.png")}/>
+            <Image
                 style={styles.headerEncaminhar}
                 source={require("../Images/HeaderEncaminhar.png")}/>
         </View>
@@ -43,12 +46,19 @@ const styles = StyleSheet.create({
         marginRight: 50,
         marginLeft: 40,
     },
-
+    addLogo:{
+        width: 28,
+        height: 28,
+        borderRadius: 10,
+        justifyContent: "flex-start",
+        marginBottom: 10,
+        marginLeft: 170,
+    },
     headerEncaminhar: {
         width:35,
         height: 35,
         borderRadius: 20,
-        marginLeft: 220,
+        marginLeft: 20,
         justifyContent: 'flex-start',
         marginBottom: 5,
         
