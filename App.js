@@ -5,7 +5,6 @@ import Header from "./src/Header/index";
 import Item from "./src/Stories/items";
 import PostItem from "./src/Posts/PostItem";
 
-
 export default function App() {
   return (
     <View style={styles.container}>

@@ -16,24 +16,21 @@ export default function Photos({Imagesource, Username}){
 
 const styles = StyleSheet.create({
 
-    container:{
-        display:'flex',
-        flexDirection:'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
     tinyLogo:{
-        width: 45,
-        height: 45,
-        borderRadius: 20,
-        marginBottom: 3,
+        width: 50,
+        height: 50,
+        borderRadius: 50,
+        borderWidth: 2,
+        borderColor: '#f1f',
+        marginBottom: 1,
         justifyContent:'center',
         alignItems:'center',
-        marginLeft: 40,
+        marginLeft: 25,
+        marginRight: 25,
     },
     userName:{
         flexDirection:'row',
         textAlign:'center',
-        fontSize: 10
+        fontSize: 12,
     }
 });

@@ -3,7 +3,7 @@ import { StyleSheet, View, Image} from 'react-native';
 
 export default function BarraInterativa(){
     return(
-        <View style={StyleSheet.BarraContainer}>
+        <View style={{flexDirection:'row'}}>
             <Image
                 style={styles.gostarLogo}
                 source={require("../Images/heart.png")}/>
@@ -17,28 +17,27 @@ export default function BarraInterativa(){
     );
 }
 const styles = StyleSheet.create({
-    BarraContainer:{
-        width: '100%',
+    BarraContainer: {
         height: 30,
-        display: 'flex',
-        flexDirection:'row',
-        justifyContent:"flex-start",
-        alignItems:"center",
+        width: 80,
     },
     gostarLogo:{
-        width: 20,
-        height: 20,
+        width: 35,
+        height: 35,
         marginLeft: 3,
+        marginTop: 10,
     },
     comentarLogo:{
-        width: 20,
-        height: 20,
-        marginLeft: 3,
+        width: 35,
+        height: 35,
+        marginLeft: 20,
+        marginTop: 10,
     },
     origamiLogo:{
-        width: 20,
-        height: 20,
-        marginLeft: 3
+        width: 35,
+        height: 35,
+        marginLeft: 265,
+        marginTop: 10
     }
 
 });

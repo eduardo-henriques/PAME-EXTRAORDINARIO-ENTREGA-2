@@ -30,22 +30,25 @@ const styles = StyleSheet.create({
         width: 40,
         height: 40,
         borderRadius: 20,
-        marginRight: 170,
-        marginBottom: 5
+        marginRight: 100,
+        marginBottom: 5,
+        marginLeft: -173,
     },
     headerTitle:{
         color: "#f35",
         fontWeight: 'bold',
         fontSize: 20,
         marginBottom: 10,
-        marginRight: -130,
+        marginRight: -30,
+        marginRight: 50,
+        marginLeft: 40,
     },
 
     headerEncaminhar: {
         width:35,
         height: 35,
         borderRadius: 20,
-        marginLeft: 100,
+        marginLeft: 220,
         justifyContent: 'flex-start',
         marginBottom: 5,
         
