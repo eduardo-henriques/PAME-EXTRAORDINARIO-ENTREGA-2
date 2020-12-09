@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View, ScrollView, Text, Image} from 'react-native';
 import Posts from "../Posts/index";
 import BarraInterativa from "../BarraInterativa/index";
-import Photos from "../Images/index";
+import Photos from "../../assets/index";
 
 
 export default function PostItem(){

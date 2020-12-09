@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TouchableWithoutFeedback } from 'react-native';
+import { StyleSheet, Text, View, Image} from 'react-native';
 
 export default function Header({title}){
     return(
@@ -61,6 +61,5 @@ const styles = StyleSheet.create({
         marginLeft: 20,
         justifyContent: 'flex-start',
         marginBottom: 5,
-        
     },
 });

@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, ScrollView} from 'react-native';
-import Photos from "../Images/index";
+import Photos from "../../assets/index";
 
 export default function Item(){
     return(
