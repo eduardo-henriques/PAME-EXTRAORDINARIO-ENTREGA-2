@@ -6,13 +6,13 @@ export default function BarraInterativa(){
         <View style={{flexDirection:'row'}}>
             <Image
                 style={styles.gostarLogo}
-                source={require("../Images/heart.png")}/>
+                source={require("../../assets/heart.png")}/>
             <Image
                 style={styles.comentarLogo}
-                source={require("../Images/comment.png")}/>
+                source={require("../../assets/comment.png")}/>
             <Image
                 style={styles.origamiLogo}
-                source={require("../Images/paper-plane.png")}/>
+                source={require("../../assets/paper-plane.png")}/>
         </View>
     );
 }

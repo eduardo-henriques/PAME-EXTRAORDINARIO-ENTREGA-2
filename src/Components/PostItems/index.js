@@ -11,66 +11,66 @@ export default function PostItem(){
             <ScrollView showsVerticalScrollIndicator={false} vertical={true}>
             
             <View style={styles.Post0}> 
-                <Photos Imagesource={require("../Images/usuario5.png")}>
+                <Photos Imagesource={require("../../assets/usuario5.png")}>
                 </Photos>
                 <Text style={{fontSize:20, marginTop:10, marginLeft:-15}}> Eduardo </Text>
             </View>
-            <Posts Postsource={require("../Images/feed1.png")} Posts/>
+            <Posts Postsource={require("../../assets/feed1.png")} Posts/>
             <View style={styles.Post1}> 
 
                 <BarraInterativa/>
             </View>
 
             <View style={styles.Post0}> 
-                <Photos Imagesource={require("../Images/usuario7.png")}>
+                <Photos Imagesource={require("../../assets/usuario7.png")}>
                 </Photos>
                 <Text style={{fontSize:20, marginTop:10, marginLeft:-15}}> Paulo </Text>
             </View>
-            <Posts Postsource={require("../Images/feed2.png")} Posts/>
+            <Posts Postsource={require("../../assets/feed2.png")} Posts/>
             <View style={styles.Post1}> 
                 
                 <BarraInterativa/>
             </View>
 
             <View style={styles.Post0}> 
-                <Photos Imagesource={require("../Images/usuario6.png")}>
+                <Photos Imagesource={require("../../assets/usuario6.png")}>
                 </Photos>
                 <Text style={{fontSize:20, marginTop:10, marginLeft:-15}}> Lucas </Text>
             </View>
-            <Posts Postsource={require("../Images/feed3.png")} Posts/>
+            <Posts Postsource={require("../../assets/feed3.png")} Posts/>
             <View style={styles.Post1}> 
                 
                 <BarraInterativa/>
             </View>
 
             <View style={styles.Post0}> 
-                <Photos Imagesource={require("../Images/usuario3.png")}>
+                <Photos Imagesource={require("../../assets/usuario3.png")}>
                 </Photos>
                 <Text style={{fontSize:20, marginTop:10, marginLeft:-15}}> Joao </Text>
             </View>    
-            <Posts Postsource={require("../Images/feed4.png")} Posts/>
+            <Posts Postsource={require("../../assets/feed4.png")} Posts/>
             <View style={styles.Post1}> 
                 
                 <BarraInterativa/>
             </View>
 
             <View style={styles.Post0}> 
-                <Photos Imagesource={require("../Images/usuario2.png")}>
+                <Photos Imagesource={require("../../assets/usuario2.png")}>
                 </Photos>
                 <Text style={{fontSize:20, marginTop:10, marginLeft:-15}}> Ruth </Text>
             </View>
-            <Posts Postsource={require("../Images/feed5.png")} Posts/>
+            <Posts Postsource={require("../../assets/feed5.png")} Posts/>
             <View style={styles.Post1}> 
                 
                 <BarraInterativa/>
             </View>
 
             <View style={styles.Post0}> 
-                <Photos Imagesource={require("../Images/usuario8.png")}>
+                <Photos Imagesource={require("../../assets/usuario8.png")}>
                 </Photos>
                 <Text style={{fontSize:20, marginTop:10, marginLeft:-15}}> Julia </Text>
             </View>
-            <Posts Postsource={require("../Images/feed6.png")} Posts/>
+            <Posts Postsource={require("../../assets/feed6.png")} Posts/>
             <View style={styles.Post1}> 
                 
                 <BarraInterativa/>
@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
         height: 550,
         alignItems: 'center',
         justifyContent: 'space-between',
-        marginBottom: 10,
+        marginBottom: 5,
         borderTopWidth: 5,
         borderTopColor: "#eee",
     },
@@ -101,7 +101,6 @@ const styles = StyleSheet.create({
         display: 'flex',
         flexDirection:'row',
         justifyContent:'flex-start',
-        marginTop: 5,
     },
     Post1:{
         backgroundColor: '#fff',

@@ -1,9 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Header from "./src/Header/index";
-import Item from "./src/Stories/items";
-import PostItem from "./src/Posts/PostItem";
+import Header from "./src/Components/Header/index";
+import Item from "./src/Components/Stories/items";
+import PostItem from "./src/Components/PostItems";
 
 export default function App() {
   return (

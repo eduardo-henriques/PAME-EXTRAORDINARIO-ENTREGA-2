@@ -7,13 +7,13 @@ export default function Header({title}){
             <Text style={styles.headerTitle}>{title}</Text>
             <Image
                 style={styles.headerLogo}
-                source={require("../Images/HeaderLogo.png")}/>
+                source={require("../../assets/HeaderLogo.png")}/>
             <Image
                 style={styles.addLogo}
-                source={require("../Images/add.png")}/>
+                source={require("../../assets/add.png")}/>
             <Image
                 style={styles.headerEncaminhar}
-                source={require("../Images/HeaderEncaminhar.png")}/>
+                source={require("../../assets/HeaderEncaminhar.png")}/>
         </View>
     );
 }
