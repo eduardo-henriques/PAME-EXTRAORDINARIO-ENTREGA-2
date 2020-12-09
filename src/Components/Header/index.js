@@ -1,13 +1,17 @@
-import React from 'react';
-import { StyleSheet, Text, View, Image} from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
+
+import Counter from "../Counter/index";
 
 export default function Header({title}){
+
     return(
         <View style={styles.container}>
             <Text style={styles.headerTitle}>{title}</Text>
             <Image
                 style={styles.headerLogo}
                 source={require("../../assets/HeaderLogo.png")}/>
+            <Counter/>
             <Image
                 style={styles.addLogo}
                 source={require("../../assets/add.png")}/>
@@ -16,7 +20,7 @@ export default function Header({title}){
                 source={require("../../assets/HeaderEncaminhar.png")}/>
         </View>
     );
-}
+};
 
 const styles = StyleSheet.create({
     container: {
@@ -35,16 +39,15 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         marginRight: 100,
         marginBottom: 5,
-        marginLeft: -173,
+        marginLeft: -170,
     },
     headerTitle:{
         color: "#f35",
         fontWeight: 'bold',
         fontSize: 20,
         marginBottom: 10,
-        marginRight: -30,
-        marginRight: 50,
-        marginLeft: 40,
+        marginRight: 48,
+        marginLeft: 50,
     },
     addLogo:{
         width: 28,
@@ -52,14 +55,15 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         justifyContent: "flex-start",
         marginBottom: 10,
-        marginLeft: 170,
+        marginLeft: 120,
     },
     headerEncaminhar: {
         width:35,
         height: 35,
         borderRadius: 20,
-        marginLeft: 20,
+        marginLeft: 15,
         justifyContent: 'flex-start',
         marginBottom: 5,
-    },
+        marginRight: 5
+    }
 });
