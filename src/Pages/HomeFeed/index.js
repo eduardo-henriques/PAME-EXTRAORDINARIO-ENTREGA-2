@@ -71,13 +71,13 @@ export default function HomeFeed(){
         },
         {
           id: 7,
-          nickName: "Julia",
-          userName: "@julia.Fluxo",
-          nickComentator: "Tia Joana",
-          profilePic: require("../../assets/usuario8.png"),
+          nickName: "Bruno",
+          userName: "@bruno.Fluxo",
+          nickComentator: "Bruno",
+          profilePic: require("../../assets/usuario9.png"),
           feedPost: "",
-          commentPost: "Interessante! 🤔👌",
-          statusPost: "Estudando ✨"
+          commentPost: "Galera já ta sabendo demais 🥳",
+          statusPost: "Ajudando bastante a galera em Git! 👌"
         },
     ];
     return(

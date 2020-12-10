@@ -12,6 +12,7 @@ export default function PicStories(){
             <Photos Imagesource={require("../../assets/usuario3.png")} Username="Joao" Photos/>
             <Photos Imagesource={require("../../assets/usuario2.png")} Username ="Ruth" Photos/>
             <Photos Imagesource={require("../../assets/usuario8.png")} Username="Julia" Photos/>
+            <Photos Imagesource={require("../../assets/usuario9.png")} Username="Bruno" Photos/>
             </ScrollView>
         </View>
     );

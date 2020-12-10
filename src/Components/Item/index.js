@@ -34,12 +34,12 @@ export default function Item({nickname, username, profilePic, feedPost, commentP
             {renderImage()}
 
             <View style={styles.bottomContainer}>
-                <BarraInterativa/>
+                
                 <View style={{flexDirection:'row', marginTop:5, borderBottomWidth:1, borderBottomColor:'#eee'}}>
                     <Text style={styles.comments}> {nickname}: </Text>
                     <Text style={{fontSize:15}}> {statusPost} </Text>
                 </View>
-                
+                <BarraInterativa/>
                 <View style={{flexDirection:'row', marginTop:5}}>
                     <Text style={{fontSize:15, fontWeight:"bold", color:'grey'}}></Text>
                     <Text style={styles.comments}> {nickComentator}: </Text>
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
         backgroundColor: "#fff",
         width: '88%',
         alignItems: 'center',
-        marginBottom: 10,
+        marginBottom: 5,
         marginRight: 20,
         marginLeft: 5
     },
@@ -117,7 +117,8 @@ const styles = StyleSheet.create({
     bottomContainer:{
         backgroundColor: '#eee',
         width: '100%',
-        height: 110,
+        paddingBottom:3,
+        marginBottom:5,
         borderBottomWidth: 1,
         borderBottomColor: '#eee',
         borderBottomLeftRadius:5,
