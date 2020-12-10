@@ -14,7 +14,7 @@ export default function HomeFeed(){
           profilePic: require("../../assets/usuario5.png"),
           feedPost: require("../../assets/feed1.png"),
           commentPost: "Cool! 🔥",
-          subtitlePost: "Home 📌",
+          statusPost: "Home 📌",
           nickComentator: "Tio Luiz"
 
         },
@@ -25,7 +25,7 @@ export default function HomeFeed(){
           nickComentator: "Tio Ben",
           profilePic: require("../../assets/usuario7.png"),
           feedPost: require("../../assets/feed2.png"),
-          subtitlePost: "📷 Trip",
+          statusPost: "📷 Trip",
           commentPost: "Maravilhosa paisagem! 👏"
         },
         {
@@ -36,7 +36,7 @@ export default function HomeFeed(){
           profilePic: require("../../assets/usuario6.png"),
           feedPost: require("../../assets/feed3.png"),
           commentPost: "Reflexivo 🤔",
-          subtitlePost: "This 😳"
+          statusPost: "This 😳"
 
         },
         {
@@ -47,7 +47,7 @@ export default function HomeFeed(){
           profilePic: require("../../assets/usuario3.png"),
           feedPost: require("../../assets/feed4.png"),
           commentPost: "Lindo!! 😻",
-          subtitlePost: "Felino 👑"
+          statusPost: "Felino 👑"
         },
         {
           id: 5,
@@ -57,7 +57,7 @@ export default function HomeFeed(){
           profilePic: require("../../assets/usuario2.png"),
           feedPost: require("../../assets/feed5.png"),
           commentPost: "Incrível! 🍁",
-          subtitlePost: "Japão! 🍂"
+          statusPost: "Japão! 🍂"
         },
         {
           id: 6,
@@ -67,7 +67,17 @@ export default function HomeFeed(){
           profilePic: require("../../assets/usuario8.png"),
           feedPost: require("../../assets/feed6.png"),
           commentPost: "Interessante! 🤔👌",
-          subtitlePost: "Estudando ✨"
+          statusPost: "Estudando ✨"
+        },
+        {
+          id: 7,
+          nickName: "Julia",
+          userName: "@julia.Fluxo",
+          nickComentator: "Tia Joana",
+          profilePic: require("../../assets/usuario8.png"),
+          feedPost: "",
+          commentPost: "Interessante! 🤔👌",
+          statusPost: "Estudando ✨"
         },
     ];
     return(
@@ -78,7 +88,7 @@ export default function HomeFeed(){
             data={list}
             showsVerticalScrollIndicator={false}
             keyExtractor={item => item.id.toString()}
-            renderItem={({item}) => (<Item nickname={item.nickName} username={item.userName} nickComentator={item.nickComentator} profilePic={item.profilePic} feedPost={item.feedPost} subtitlePost={item.subtitlePost} commentPost={item.commentPost}/>)}
+            renderItem={({item}) => (<Item nickname={item.nickName} username={item.userName} nickComentator={item.nickComentator} profilePic={item.profilePic} feedPost={item.feedPost} statusPost={item.statusPost} commentPost={item.commentPost}/>)}
           />
         </View>
     );
