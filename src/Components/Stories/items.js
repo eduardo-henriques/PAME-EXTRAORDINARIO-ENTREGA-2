@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View, ScrollView} from 'react-native';
 import Photos from "../../assets/index";
 
-export default function Item(){
+export default function PicStories(){
     return(
         <View style={styles.container}>
             <ScrollView showsHorizontalScrollIndicator={false} horizontal={true}>
