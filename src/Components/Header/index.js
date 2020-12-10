@@ -11,7 +11,7 @@ export default function Header({title}){
             <Image
                 style={styles.headerLogo}
                 source={require("../../assets/HeaderLogo.png")}/>
-            <Counter/> 
+            <Counter/>
             <Image
                 style={styles.addLogo}
                 source={require("../../assets/add.png")}/>

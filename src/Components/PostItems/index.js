@@ -17,7 +17,6 @@ export default function PostItem(){
             </View>
             <Posts Postsource={require("../../assets/feed1.png")} Posts/>
             <View style={styles.Post1}> 
-
                 <BarraInterativa/>
             </View>
 
