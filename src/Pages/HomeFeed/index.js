@@ -1,8 +1,14 @@
 import React from 'react';
-import { FlatList, StyleSheet, View, Text } from 'react-native';
+import { FlatList, StyleSheet, View, Text,TouchableOpacity } from 'react-native';
 import Header from "../../Components/Header/index";
 import PicStories from "../../Components/Stories/items";
 import Item from "../../Components/Item/index";
+import Adicionar from "../../Components/futter/index.js";
+
+import { AntDesign } from '@expo/vector-icons'; 
+
+
+
 
 
 export default function HomeFeed(){
@@ -90,6 +96,11 @@ export default function HomeFeed(){
             keyExtractor={item => item.id.toString()}
             renderItem={({item}) => (<Item nickname={item.nickName} username={item.userName} nickComentator={item.nickComentator} profilePic={item.profilePic} feedPost={item.feedPost} statusPost={item.statusPost} commentPost={item.commentPost}/>)}
           />
+          <Adicionar/>
+          <TouchableOpacity style = {styles.addButtom}>
+            <AntDesign name="pluscircleo" size={40} color="#f2f" />
+          </TouchableOpacity>
+          
         </View>
     );
 }
@@ -100,4 +111,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
   },
+  addButtom:{
+    position: 'absolute',
+    marginTop:760,
+
+
+  }
 });
