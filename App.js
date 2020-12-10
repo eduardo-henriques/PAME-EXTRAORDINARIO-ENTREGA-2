@@ -15,10 +15,10 @@ export default function App() {
       <StatusBar backgroundColor='#F3F2F3'/>
       <Header title='Yacloud'/>
       <Item name='Stories'/>
-      <PostItem name='Posts'/>      
       <TouchableOpacity style={styles.floatButton}>
         <AntDesign name="pluscircleo" size={40} color="#f35" />
       </TouchableOpacity>
+      <PostItem name='Posts'/>            
     </View>
   );
 }
