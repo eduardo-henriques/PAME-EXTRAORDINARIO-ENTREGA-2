@@ -1,18 +1,25 @@
 import React from 'react';
-import { StyleSheet, View, Image} from 'react-native';
+import { StyleSheet, View,TouchableOpacity, Image} from 'react-native';
+
+import Like from "../Like/index"
+import addComment from "../coment/index"
 
 export default function BarraInterativa(){
     return(
         <View style={{flexDirection:'row'}}>
-            <Image
-                style={styles.gostarLogo}
-                source={require("../../assets/heart.png")}/>
-            <Image
-                style={styles.comentarLogo}
-                source={require("../../assets/comment.png")}/>
-            <Image
-                style={styles.origamiLogo}
-                source={require("../../assets/paper-plane.png")}/>
+            <Like name='Like'/>          
+               
+            <TouchableOpacity>
+                
+                <Image
+                    style={styles.comentarLogo}
+                    source={require("../../assets/comment.png")}/>
+            </TouchableOpacity>
+            <TouchableOpacity>
+                <Image
+                    style={styles.origamiLogo}
+                    source={require("../../assets/paper-plane.png")}/>
+            </TouchableOpacity>
         </View>
     );
 }
@@ -21,12 +28,19 @@ const styles = StyleSheet.create({
         height: 30,
         width: 80,
     },
-    gostarLogo:{
+    
+    Like: {
+        
+    },
+    gostarLogo: {
         width: 35,
         height: 35,
         marginLeft: 3,
         marginTop: 10,
+       
     },
+    
+    
     comentarLogo:{
         width: 35,
         height: 35,
