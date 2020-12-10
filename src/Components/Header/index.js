@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
+import { AntDesign } from '@expo/vector-icons'; 
 
 import Counter from "../Counter/index";
 
@@ -11,10 +12,15 @@ export default function Header({title}){
             <Image
                 style={styles.headerLogo}
                 source={require("../../assets/HeaderLogo.png")}/>
-            <Counter/> 
-            <Image
-                style={styles.addLogo}
-                source={require("../../assets/add.png")}/>
+            
+            <Counter/>
+            
+            <TouchableOpacity style={styles.button}>
+            
+            <AntDesign name="pluscircle" size={24} color="black" />
+
+            </TouchableOpacity> 
+            
             <Image
                 style={styles.headerEncaminhar}
                 source={require("../../assets/HeaderEncaminhar.png")}/>
@@ -39,7 +45,7 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         marginRight: 100,
         marginBottom: 5,
-        marginLeft: -171,
+        marginLeft: -170,
     },
     headerTitle:{
         color: "#f35",
@@ -49,12 +55,12 @@ const styles = StyleSheet.create({
         marginRight: 48,
         marginLeft: 50,
     },
-    addLogo:{
+    button: {
         width: 28,
         height: 28,
         borderRadius: 10,
         justifyContent: "flex-start",
-        marginBottom: 10,
+        
         marginLeft: 120,
     },
     headerEncaminhar: {
