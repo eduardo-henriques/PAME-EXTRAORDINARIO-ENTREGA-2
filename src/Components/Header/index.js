@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         marginRight: 100,
         marginBottom: 5,
-        marginLeft: -170,
+        marginLeft: -171,
     },
     headerTitle:{
         color: "#f35",
