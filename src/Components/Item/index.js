@@ -2,7 +2,22 @@ import React from 'react';
 import { StyleSheet, View, Image, Text} from 'react-native';
 import BarraInterativa from '../BarraInterativa';
 
-export default function Item({nickname, username, profilePic, feedPost, commentPost, nickComentator,subtitlePost}){
+
+
+
+export default function Item({nickname, username, profilePic, feedPost, commentPost, nickComentator,statusPost}){
+    
+    function renderImage(){
+        if(feedPost) {
+            return(
+                <Image style={styles.feedPhoto} source={feedPost}/>
+            );
+        }
+        else{
+            return null;
+        }
+    }
+    
     return(
         <View style={styles.mainContainer}>
             <View style={styles.upperContainer}>
@@ -10,21 +25,21 @@ export default function Item({nickname, username, profilePic, feedPost, commentP
                     <Image style={styles.profilePhoto} source={profilePic}/>
                 </View>
                 <View style={{flexDirection:'column', width:'100%'}}>
-                    <Text style={styles.nameNick}> {nickname}</Text>
-                    <Text style={styles.nameUser}> {username}</Text>
+                    <Text style={styles.nameNick}>{nickname}</Text>
+                    <Text style={styles.nameUser}>{username}</Text>
                 </View>
                 
             </View>
 
-            <Image style={styles.feedPhoto} source={feedPost}/>
+            {renderImage()}
 
             <View style={styles.bottomContainer}>
-                <BarraInterativa/>
+                
                 <View style={{flexDirection:'row', marginTop:5, borderBottomWidth:1, borderBottomColor:'#eee'}}>
                     <Text style={styles.comments}> {nickname}: </Text>
-                    <Text style={{fontSize:15}}> {subtitlePost} </Text>
+                    <Text style={{fontSize:15}}> {statusPost} </Text>
                 </View>
-                
+                <BarraInterativa/>
                 <View style={{flexDirection:'row', marginTop:5}}>
                     <Text style={{fontSize:15, fontWeight:"bold", color:'grey'}}></Text>
                     <Text style={styles.comments}> {nickComentator}: </Text>
@@ -41,9 +56,8 @@ const styles = StyleSheet.create({
     mainContainer:{
         backgroundColor: "#fff",
         width: '88%',
-        height: 570,
         alignItems: 'center',
-        marginBottom: 10,
+        marginBottom: 5,
         marginRight: 20,
         marginLeft: 5
     },
@@ -90,6 +104,8 @@ const styles = StyleSheet.create({
     feedPhoto:{
         width: "100%",
         height: 400,
+        marginLeft: 5,
+        marginRight: 5
         
     },
 
@@ -101,9 +117,8 @@ const styles = StyleSheet.create({
     bottomContainer:{
         backgroundColor: '#eee',
         width: '100%',
-        height: 110,
-        borderTopWidth: 1,
-        borderTopColor: 'grey',
+        paddingBottom:3,
+        marginBottom:5,
         borderBottomWidth: 1,
         borderBottomColor: '#eee',
         borderBottomLeftRadius:5,
