@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
         backgroundColor:'#eee',
         width:'100%',
         height: 60,
-        marginTop:10,
+        marginTop:6,
         borderTopWidth:1,
         borderTopColor:'#eee',
         borderTopLeftRadius: 5,
@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
     bottomContainer:{
         backgroundColor: '#eee',
         width: '100%',
-        paddingBottom:3,
+        paddingBottom:10,
         marginBottom:5,
         borderBottomWidth: 1,
         borderBottomColor: '#eee',

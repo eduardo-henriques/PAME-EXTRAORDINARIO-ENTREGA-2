@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
-
-import Counter from "../Counter/index";
+import { Entypo} from '@expo/vector-icons';
 
 export default function Header({title}){
 
@@ -11,9 +10,9 @@ export default function Header({title}){
             <Image
                 style={styles.headerLogo}
                 source={require("../../assets/HeaderLogo.png")}/>
-            <Image
-                style={styles.headerEncaminhar}
-                source={require("../../assets/HeaderEncaminhar.png")}/>
+            <TouchableOpacity style = {styles.addButtom}>
+                <Entypo name="forward" size={35} color="#f2f" style={{marginTop:3, marginLeft:310}}/>
+            </TouchableOpacity>
         </View>
     );
 };
