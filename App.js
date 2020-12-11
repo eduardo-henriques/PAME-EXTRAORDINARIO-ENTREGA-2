@@ -1,7 +1,10 @@
+import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import HomeFeed from './src/Pages/HomeFeed';
 import {StyleSheet,View} from 'react-native';
+
+import SocialStack from "./src/Routes/social.js";
 
 
 export default function App(){
