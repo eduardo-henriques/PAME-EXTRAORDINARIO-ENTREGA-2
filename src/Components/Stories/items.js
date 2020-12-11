@@ -27,7 +27,8 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1,
         borderBottomColor: '#eee',
         display:'flex',
-        flexDirection: "column"
+        flexDirection: "column",
+        marginTop:10,
     }
 });
 
