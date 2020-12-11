@@ -10,7 +10,7 @@ const Counter = () => {
   return (
     <View style={styles.container}>
       <View style={styles.countContainer}>
-        <Text style={{width:100, marginTop:15, marginRight:310, fontSize: 15, fontWeight:'bold'}}>Posts: {count}</Text>
+        <Text style={{width:100, marginTop:10, marginLeft:250, fontSize: 15, fontWeight:'bold'}}>Posts: {count}</Text>
       </View>
       <TouchableOpacity
         style={styles.button}
@@ -34,8 +34,8 @@ const styles = StyleSheet.create({
     height:40,
     borderRadius: 40,
     width:40,
-    marginRight: 10,
-    marginTop: 5
+    marginLeft: 304,
+    marginBottom: 5
   },
   countContainer: {
     alignItems: "center",

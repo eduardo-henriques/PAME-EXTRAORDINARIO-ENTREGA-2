@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 import { Entypo} from '@expo/vector-icons';
 
@@ -11,7 +11,7 @@ export default function Header({title}){
                 style={styles.headerLogo}
                 source={require("../../assets/HeaderLogo.png")}/>
             <TouchableOpacity style = {styles.addButtom}>
-                <Entypo name="forward" size={35} color="#f2f" style={{marginTop:3, marginLeft:310}}/>
+                <Entypo name="forward" size={35} color="#f2f" style={{marginBottom:5, marginLeft:15, marginRight:10}}/>
             </TouchableOpacity>
         </View>
     );

@@ -132,7 +132,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   addButtom:{
-    marginRight: 10
+    marginRight: 65,
+    marginLeft: -20,
+    marginTop: 5
   }
 
 });
