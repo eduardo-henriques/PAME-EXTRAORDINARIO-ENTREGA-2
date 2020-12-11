@@ -3,7 +3,7 @@ import { StyleSheet, View, Image, Text } from 'react-native';
 
 export default function Posts({Postsource}){
     return(
-        <View style={StyleSheet.container}>
+        <View style={StyleSheet.container3}>
             <Image
                 style={styles.tinyLogo}
                 source={Postsource}/>

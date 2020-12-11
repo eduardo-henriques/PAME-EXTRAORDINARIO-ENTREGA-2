@@ -1,35 +1,33 @@
+import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 
+
 import Header from "./src/Components/Header/index";
 import Item from "./src/Components/Stories/items";
 import PostItem from "./src/Components/PostItems";
+import SocialStack from "./src/Routes/org-perfil.js"
 //import Button from "./src/Components/AddButton/index";
 
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <StatusBar backgroundColor='#F3F2F3'/>
-      <Header title='Yacloud'/>
-      <Item name='Stories'/>
-      <TouchableOpacity style={styles.floatButton}>
-        <AntDesign name="pluscircleo" size={40} color="#f35" />
-      </TouchableOpacity>
-      <PostItem name='Posts'/>            
+    <View style={styles.bloco}>
+      
+      <SocialStack/> 
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  bloco: {
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
   },
-  floatButton:{
+  adicionarpost:{
     position: "absolute",
     marginTop:750,
 

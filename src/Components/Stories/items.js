@@ -4,7 +4,7 @@ import Photos from "../../assets/index";
 
 export default function Item(){
     return(
-        <View style={styles.container}>
+        <View style={styles.contaner2}>
             <ScrollView showsHorizontalScrollIndicator={false} horizontal={true}>
             <Photos Imagesource={require("../../assets/usuario5.png")} Username="Eduardo" Photos/>
             <Photos Imagesource={require("../../assets/usuario7.png")} Username="Paulo" Photos/>
@@ -18,7 +18,7 @@ export default function Item(){
 }
 
 const styles = StyleSheet.create({
-    container: {
+    contaner2: {
         backgroundColor:"#fff",
         borderBottomLeftRadius: 14,
         width:'100%',
