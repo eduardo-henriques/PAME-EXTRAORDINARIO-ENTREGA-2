@@ -1,12 +1,17 @@
 import React from 'react';
-import { StyleSheet, View, Image, Text} from 'react-native';
+import { StyleSheet, View, Image, Text, TouchableOpacity} from 'react-native';
 import BarraInterativa from '../BarraInterativa';
 
 
 
 
-export default function Item({nickname, username, profilePic, feedPost, commentPost, nickComentator,statusPost}){
+export default function Item({nickname, username, profilePic, feedPost, commentPost, nickComentator,statusPost,navigation}){
+
+   
     
+    
+
+
     function renderImage(){
         if(feedPost) {
             return(
@@ -18,6 +23,10 @@ export default function Item({nickname, username, profilePic, feedPost, commentP
         }
     }
     
+    function navigateToProfile(){
+        navigation.navigate("PagePerfil");
+    }
+
     return(
         <View style={styles.mainContainer}>
             <View style={styles.upperContainer}>
@@ -25,7 +34,9 @@ export default function Item({nickname, username, profilePic, feedPost, commentP
                     <Image style={styles.profilePhoto} source={profilePic}/>
                 </View>
                 <View style={{flexDirection:'column', width:'100%'}}>
+                <TouchableOpacity onPress={navigateToProfile} style={styles.button} > 
                     <Text style={styles.nameNick}>{nickname}</Text>
+                </TouchableOpacity>
                     <Text style={styles.nameUser}>{username}</Text>
                 </View>
                 
@@ -36,8 +47,13 @@ export default function Item({nickname, username, profilePic, feedPost, commentP
             <View style={styles.bottomContainer}>
                 
                 <View style={{flexDirection:'row', marginTop:5, borderBottomWidth:1, borderBottomColor:'#eee'}}>
-                    <Text style={styles.comments}> {nickname}: </Text>
+                    
+                    
+                        <Text style={styles.comments}> {nickname}: </Text>
+                    
+                
                     <Text style={{fontSize:15}}> {statusPost} </Text>
+                    
                 </View>
                 <BarraInterativa/>
                 <View style={{flexDirection:'row', marginTop:5}}>
@@ -86,13 +102,22 @@ const styles = StyleSheet.create({
         marginLeft: 5,
         marginRight: 15
     },
-
+    
+    button:{
+        marginTop:30,
+        height:80,
+        width:150,
+        marginRight:60,
+        marginTop:1,
+    },
+   
     nameNick:{
         fontSize: 20, 
         marginTop: 1, 
         marginRight: 60,
         fontWeight:'bold'
     },
+
 
     nameUser:{
         fontSize: 15,
@@ -125,5 +150,6 @@ const styles = StyleSheet.create({
         borderBottomRightRadius: 5,
         display:"flex",
         flexDirection:'column',
-    }
+    },
+    
 });

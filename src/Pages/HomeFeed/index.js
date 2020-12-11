@@ -7,7 +7,10 @@ import Footer from "../../Components/futter/index.js";
 import { AntDesign } from '@expo/vector-icons';
 
 
-export default function HomeFeed({navegation}){
+export default function HomeFeed({navigation}){
+
+  
+
   const [list,setList]= useState([
     {   
       id: 1,
@@ -113,7 +116,9 @@ export default function HomeFeed({navegation}){
           data={list}
           showsVerticalScrollIndicator={false}
           keyExtractor={item => item.id.toString()}
-          renderItem={({item}) => (<Item nickname={item.nickName} username={item.userName} nickComentator={item.nickComentator} profilePic={item.profilePic} feedPost={item.feedPost} statusPost={item.statusPost} commentPost={item.commentPost}/>)}
+          renderItem={({item}) => (<Item nickname={item.nickName} username={item.userName} 
+            nickComentator={item.nickComentator} profilePic={item.profilePic} feedPost={item.feedPost} statusPost={item.statusPost}
+             commentPost={item.commentPost} navigation={navigation} />) }
       />
       <View style={{flexDirection:'row'}}>
         <Footer/>

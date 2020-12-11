@@ -6,12 +6,13 @@ import Item from "../../Components/Item/index";
 import Footer from "../../Components/futter/index.js";
 
 
+
 export default function PagePerfil(){
     return(
         <View style = {styles.containerPage}>
             
             <View>
-
+                <FlatList  />
             </View>
 
         </View>
