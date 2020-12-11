@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { FlatList, StyleSheet, View,TouchableOpacity, RecyclerViewBackedScrollView } from 'react-native';
+import { FlatList, StyleSheet, View,TouchableOpacity} from 'react-native';
 import Header from "../../Components/Header/index";
 import PicStories from "../../Components/Stories/items";
 import Item from "../../Components/Item/index";
@@ -7,7 +7,7 @@ import Footer from "../../Components/futter/index.js";
 import { AntDesign } from '@expo/vector-icons';
 
 
-export default function HomeFeed(){
+export default function HomeFeed({navegation}){
   const [list,setList]= useState([
     {   
       id: 1,
@@ -104,9 +104,9 @@ export default function HomeFeed(){
     newList.push(newItem);
   }
 
-  return(
-    <View style={styles.containerHome}>
-      <Header title='Yacloud'/>
+    return(
+      <View style={styles.containerHome}>
+      
       <PicStories name='Stories'/>
       <FlatList
           inverted={true}
@@ -136,5 +136,21 @@ const styles = StyleSheet.create({
     marginLeft: -20,
     marginTop: 5
   }
-
 });
+
+/*
+
+ <View style={styles.container}>
+          
+          <PicStories name='Stories'/>
+          <FlatList
+            data={list}
+            showsVerticalScrollIndicator={false}
+            keyExtractor={item => item.id.toString()}
+            renderItem={({item}) => (<Item nickname={item.nickName} username={item.userName} nickComentator={item.nickComentator} profilePic={item.profilePic} feedPost={item.feedPost} statusPost={item.statusPost} commentPost={item.commentPost}/>)}
+          />
+          <Footer/>
+          
+        </View>
+
+*/
