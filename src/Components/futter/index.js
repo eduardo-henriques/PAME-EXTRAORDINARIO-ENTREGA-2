@@ -7,9 +7,8 @@ export default function Footer(){
     return(
         <View style={styles.container}>
             <TouchableOpacity style = {styles.addButtom}>
-                <AntDesign name="home" size={35} color="#f2f" style={{marginTop:4, marginLeft:5}}/>
+                <AntDesign name="home" size={35} color="#f2f" style={{marginTop:4, marginLeft:60}}/>
             </TouchableOpacity>
-            <Counter/>
             
         </View>
     );
