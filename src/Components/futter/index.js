@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View, ScrollView} from 'react-native';
 import Photos from "../../assets/index";
 
-export default function PicStories(){
+export default function Adicionar(){
     return(
         <View style={styles.container}>
             
