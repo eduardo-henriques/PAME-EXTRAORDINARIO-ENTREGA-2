@@ -11,10 +11,6 @@ export default function Header({title}){
             <Image
                 style={styles.headerLogo}
                 source={require("../../assets/HeaderLogo.png")}/>
-            <Counter/>
-            <Image
-                style={styles.addLogo}
-                source={require("../../assets/add.png")}/>
             <Image
                 style={styles.headerEncaminhar}
                 source={require("../../assets/HeaderEncaminhar.png")}/>
@@ -37,7 +33,7 @@ const styles = StyleSheet.create({
         width: 40,
         height: 40,
         borderRadius: 20,
-        marginRight: 100,
+        marginRight: 300,
         marginBottom: 5,
         marginLeft: -170,
     },

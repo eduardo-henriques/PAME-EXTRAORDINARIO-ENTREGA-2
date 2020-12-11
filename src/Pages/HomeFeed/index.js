@@ -1,13 +1,9 @@
 import React from 'react';
-import { FlatList, StyleSheet, View, Text,TouchableOpacity } from 'react-native';
+import { FlatList, StyleSheet, View,TouchableOpacity } from 'react-native';
 import Header from "../../Components/Header/index";
 import PicStories from "../../Components/Stories/items";
 import Item from "../../Components/Item/index";
-import Adicionar from "../../Components/futter/index.js";
-
-import { AntDesign } from '@expo/vector-icons'; 
-
-
+import Footer from "../../Components/futter/index.js";
 
 
 
@@ -86,6 +82,10 @@ export default function HomeFeed(){
           statusPost: "Ajudando bastante a galera em Git! 👌"
         },
     ];
+
+
+
+
     return(
         <View style={styles.container}>
           <Header title='Yacloud'/>
@@ -96,10 +96,7 @@ export default function HomeFeed(){
             keyExtractor={item => item.id.toString()}
             renderItem={({item}) => (<Item nickname={item.nickName} username={item.userName} nickComentator={item.nickComentator} profilePic={item.profilePic} feedPost={item.feedPost} statusPost={item.statusPost} commentPost={item.commentPost}/>)}
           />
-          <Adicionar/>
-          <TouchableOpacity style = {styles.addButtom}>
-            <AntDesign name="pluscircleo" size={40} color="#f2f" />
-          </TouchableOpacity>
+          <Footer/>
           
         </View>
     );
