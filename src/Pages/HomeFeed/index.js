@@ -118,7 +118,7 @@ export default function HomeFeed({navigation}){
           keyExtractor={item => item.id.toString()}
           renderItem={({item}) => (<Item nickname={item.nickName} username={item.userName} 
             nickComentator={item.nickComentator} profilePic={item.profilePic} feedPost={item.feedPost} statusPost={item.statusPost}
-             commentPost={item.commentPost} navigation={navigation} />) }
+             commentPost={item.commentPost} navigation={navigation}  />) }
       />
       <View style={{flexDirection:'row'}}>
         <Footer/>

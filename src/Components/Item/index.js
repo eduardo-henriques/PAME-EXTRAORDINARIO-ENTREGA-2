@@ -24,7 +24,20 @@ export default function Item({nickname, username, profilePic, feedPost, commentP
     }
     
     function navigateToProfile(){
-        navigation.navigate("PagePerfil");
+        navigation.navigate("PagePerfil",{
+          data:{ 
+            id: 3,
+            nickName: "Lucas",
+            userName: "@lucas.Alves",
+            nickComentator: "Tia May",
+            profilePic: require("../../assets/usuario6.png"),
+            feedPost: require("../../assets/feed3.png"),
+            commentPost: "Reflexivo 🤔",
+            statusPost: "This 😳"
+            }
+
+        }
+        );
     }
 
     return(
@@ -105,7 +118,7 @@ const styles = StyleSheet.create({
     
     button:{
         marginTop:30,
-        height:80,
+        height:30,
         width:150,
         marginRight:60,
         marginTop:1,
