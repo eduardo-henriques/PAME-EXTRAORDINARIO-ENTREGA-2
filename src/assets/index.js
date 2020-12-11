@@ -3,7 +3,7 @@ import { StyleSheet, View, Image, Text } from 'react-native';
 
 export default function Photos({Imagesource, Username}){
     return(
-        <View style={StyleSheet.container}>
+        <View style={styles.container}>
             <Image
                 style={styles.tinyLogo}
                 source={Imagesource}/>

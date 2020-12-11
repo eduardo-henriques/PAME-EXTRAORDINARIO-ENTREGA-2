@@ -3,7 +3,7 @@ import { StyleSheet, View, Image} from 'react-native';
 
 export default function BarraInterativa(){
     return(
-        <View style={{flexDirection:'row'}}>
+        <View style={{flexDirection:'row', borderTopWidth:1, borderTopColor:'grey', borderBottomWidth:1, borderBottomColor:'grey', marginTop:5, paddingBottom:8}}>
             <Image
                 style={styles.gostarLogo}
                 source={require("../../assets/heart.png")}/>

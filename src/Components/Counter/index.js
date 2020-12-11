@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import {addPost} from "../../Pages/HomeFeed/index"
+import { AntDesign } from '@expo/vector-icons'; 
 
 const Counter = () => {
   const [count, setCount] = useState(6);
@@ -10,12 +12,7 @@ const Counter = () => {
       <View style={styles.countContainer}>
         <Text>Posts: {count}</Text>
       </View>
-      <TouchableOpacity
-        style={styles.button}
-        onPress={onPress}
-      >
-        <Text style={{fontSize:15}}></Text>
-      </TouchableOpacity>
+      
     </View>
   );
 };
@@ -27,13 +24,7 @@ const styles = StyleSheet.create({
     width: 200,
     height: 50
   },
-  button: {
-    alignItems: "center",
-    backgroundColor: "#fff",
-    height:20,
-    width:100,
-    marginLeft: 130,
-  },
+  
   countContainer: {
     alignItems: "center",
     marginLeft: 20,

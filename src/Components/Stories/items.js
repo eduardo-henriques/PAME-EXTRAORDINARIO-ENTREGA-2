@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View, ScrollView} from 'react-native';
 import Photos from "../../assets/index";
 
-export default function Item(){
+export default function PicStories(){
     return(
         <View style={styles.container}>
             <ScrollView showsHorizontalScrollIndicator={false} horizontal={true}>
@@ -12,6 +12,7 @@ export default function Item(){
             <Photos Imagesource={require("../../assets/usuario3.png")} Username="Joao" Photos/>
             <Photos Imagesource={require("../../assets/usuario2.png")} Username ="Ruth" Photos/>
             <Photos Imagesource={require("../../assets/usuario8.png")} Username="Julia" Photos/>
+            <Photos Imagesource={require("../../assets/usuario9.png")} Username="Bruno" Photos/>
             </ScrollView>
         </View>
     );
