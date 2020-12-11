@@ -6,6 +6,7 @@ import {StyleSheet,View} from 'react-native';
 
 //import SocialStack from "./src/Routes/social";
 
+//Comentados pois estavam dando erro.
 
 export default function App(){
   return (

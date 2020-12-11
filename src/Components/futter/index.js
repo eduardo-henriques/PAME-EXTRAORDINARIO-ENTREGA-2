@@ -1,15 +1,16 @@
 import React from 'react';
 import { StyleSheet, View, TouchableOpacity} from 'react-native';
-import { AntDesign } from '@expo/vector-icons'; 
+import { AntDesign} from '@expo/vector-icons'; 
 import Counter from '../Counter/index';
 
 export default function Footer(){
     return(
         <View style={styles.container}>
             <TouchableOpacity style = {styles.addButtom}>
-            <AntDesign name="home" size={35} color="#f2f" style={{marginTop:3, marginLeft:15}}/>
+                <AntDesign name="home" size={35} color="#f2f" style={{marginTop:4, marginLeft:5}}/>
             </TouchableOpacity>
             <Counter/>
+            
         </View>
     );
 }
@@ -24,7 +25,7 @@ const styles = StyleSheet.create({
         borderBottomColor: '#eee',
         display:'flex',
         flexDirection: "row",
-        justifyContent:"flex-start"
+        justifyContent:"flex-start",
     }
 });
 
